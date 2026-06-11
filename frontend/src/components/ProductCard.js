@@ -29,7 +29,7 @@ export default function ProductCard({ product }) {
     <div className="product-card card">
       <Link to={`/products/${product._id}`}>
         <div className="product-img-wrap">
-          <img src={product.image || 'https://placehold.co/400x300/eee/999?text=Ürün'} alt={product.name} />
+<img src={imgUrl(product.image)} alt={product.name} />
         </div>
         <div className="product-info">
           <span className="product-category">{product.category}</span>
